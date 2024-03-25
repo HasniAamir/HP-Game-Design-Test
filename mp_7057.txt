@@ -1,0 +1,273 @@
+﻿# ----- Level mp_7057---------------------------
+# Designer: Hasni Aamir
+# Properties: Collect 10 Newspaper, Clear 10 tickets, Open 20 Mails, Spells used Cistem Aperio and Lumos
+# Difficulty Target: Medium
+
+
+win=newspaper 10
+
+
+lose=moves 20           
+
+
+
+
+# - Star/Points Targets —----------
+star=1000                
+star=5000                
+star=115000        
+
+
+
+
+# - Gameboard Items --
+
+
+new=rbgyvw           
+
+
+
+
+color.r=Red        
+color.b=Blue           
+color.g=Green            
+color.y=Yellow            
+color.v=Violet
+color.w=White   
+color.m=Mail|mail|true
+color.t=Ticket|ticket|true
+
+
+
+
+weights=16 16 16 16 16 20        
+
+
+
+
+ticket_rules=100,3,2,10 
+
+
+
+
+# —----------- The Gameboard—------------        
+
+
+
+
+row=.wRRRRRR.        
+row=.RRRRRRR.        
+row=RRRRRRRRR        
+row=RRRRRRRRR        
+row=RRRRRRRRR
+row=wRRRRRRRR        
+row=RRwRRRRwR
+row=.RRRRRRR.
+row=.RRRRRRR.
+
+
+
+
+
+
+
+
+mail=.........
+mail=.........
+mail=.........
+mail=22222....
+mail=22222....
+mail=.222.....
+mail=.........
+mail=.........
+mail=.........
+
+
+
+
+tickets=...TtTt..
+tickets=...TtTt..
+tickets=...Tt....
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+tickets=.........
+
+
+
+
+newspaper.row=.........
+newspaper.row=.........
+newspaper.row=.......11
+newspaper.row=.......11
+newspaper.row=.......22
+newspaper.row=.......22
+newspaper.row=.........
+newspaper.row=.........
+newspaper.row=.........
+
+
+newspaper.height1=5
+newspaper.height2=5
+
+
+
+
+
+
+boost=.........
+boost=.........
+boost=...11....
+boost=...1.1...
+boost=.........
+boost=....1....
+boost=.........
+boost=.........
+boost=.........
+
+
+
+
+# ----- Collectable Items --------------------
+
+
+target.mail.className=mail
+target.mail.color=m
+target.mail.goal=20
+target.mail.min=5
+target.mail.max=5
+target.mail.percent=100
+target.mail.levelWeights=50 50
+target.mail.sprite=Mail
+target.mail.type=flyto
+target.mail.rotateOnFlyTo=false
+target.mail.flyToUI=CollectorMaster2
+target.mail.dropColumnFilter=.........
+
+
+
+
+target.ticket.className=ticket
+target.ticket.color=t
+target.ticket.goal=10
+target.ticket.type=flyto
+target.ticket.rotateOnFlyTo=false
+target.ticket.flyToUI=CollectorMaster1
+
+
+
+
+
+
+# ----- Spell Rules ----------------------
+
+
+SpellCistemAperio.enabled=true
+SpellCistemAperio.benefit_color=m,10
+SpellCistemAperio.benefit_collectDrops=true
+SpellCistemAperio.benefit_plumping=20
+SpellCistemAperio.benefit_plumpIncrement=3
+SpellCistemAperio.benefit_clearRack=true
+SpellCistemAperio.benefit_supers=Vsplitter,4
+SpellCistemAperio.benefit_supers=Hsplitter,4
+SpellCistemAperio.benefit_moves=3
+
+
+target.spell.color=w
+target.spell.isWinCondition=false
+target.spell.type=flyto
+target.spell.flyToUI=FlyToSpellMeter
+target.spell.refillAmount=12
+
+
+
+
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=.........
+SpellCistemAperio.chest=...111...
+SpellCistemAperio.chest=...111...
+
+
+
+
+
+
+SpellLumos.enabled=true
+
+
+dark=...1111..
+dark=...1111..
+dark=...1111..
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+dark=.........
+
+
+
+
+
+
+# ----- Special Rules ----------------------
+
+
+
+
+rack_intro=type 1 duration 1.00 delay .1        
+
+
+rack_outro=type 2 duration 1.00 delay 0.25        
+
+
+
+
+bg_color=255 255 255 255        
+
+
+music=CheerUpCharlieMusic_2  GoldenTicketMusic NotCandyManMusic_2 NotCandyManMusic_1  CandyManMusic CandymanMusic_2 musicIsSequential=false            
+
+
+music_delay=0                                                                                           ##                                                                                                        
+two_by_two_splitter=true        
+square_match=true                
+
+
+
+
+bonus=6 deleter                
+bonus=11 deleter        
+bonus=15 deleter        
+bonus=19 deleter        
+
+
+
+
+
+
+
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove          
+inLevelPowerup=powerup_rowclear #Arrow                
+inLevelPowerup=powerup_basket #Gobstopper        
+inLevelPowerup=powerup_super_plump # Butterfly        
+
+
+
+
+
+
+# ----- Secondary Cascade Commands ---------
+
+
+explosiveness=5

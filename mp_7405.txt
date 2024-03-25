@@ -1,0 +1,217 @@
+﻿# ----- Level mp_7405 ---------------------------
+# Designer: Hasni Aamir
+# Properties: Collect 2 Grims, Spread and Collect 6 Lanterns
+# Difficulty Target: Hard
+
+
+win=collect        
+win=grim 2
+win=spread                
+
+
+lose=moves 10           
+
+
+
+
+# - Star/Points Targets —----------
+star=1000                
+star=5000                
+star=115000        
+
+
+
+
+# - Gameboard Items --
+
+
+new=rbgyv           
+
+
+color.r=Red         
+color.b=Blue           
+color.g=Green            
+color.y=Yellow            
+color.v=Violet
+color.s=Blocker|blocker|true  
+
+
+weights=16 16 16 16 16        
+
+
+
+
+blocker_weights=8 4 0 (Level 1, Level 2, Always 0)
+
+
+
+
+# —----------- The Gameboard—------------        
+
+
+row=..RRRRRRR        
+row=..RRRRRRR        
+row=RRRRRRRRR        
+row=RRRR.RRRR        
+row=RRRR.RRRR        
+row=RRRRRRRRR        
+row=RRRRRRRRR
+row=RRRRRRR..
+row=RRRRRRR..
+
+
+
+
+
+
+
+
+
+
+#Spread
+spread=.........
+spread=.........
+spread=1........
+spread=1........
+spread=.........
+spread=........1
+spread=........1
+spread=.........
+spread=.........
+
+
+
+
+grim.1.level=4
+
+
+grim.1.path=..<<<<<xx
+grim.1.path=..<<<<<xx
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+
+
+grim.2.level=4
+
+
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=.........
+grim.1.path=xx>>>>>..
+grim.1.path=xx>>>>>..
+
+
+
+
+blockers=.........
+blockers=.........
+blockers=....2....
+blockers=...1.1...
+blockers=...1.1...
+blockers=....2....
+blockers=.........
+blockers=.........
+blockers=.........
+
+
+
+
+
+
+boost=.........
+boost=.........
+boost=.......1.
+boost=.......1.
+boost=.........
+boost=.1.......
+boost=.1.......
+boost=.........
+boost=.........
+
+
+
+
+# ----- Collectable Items --------------------
+                        
+
+
+
+
+#Lanterns Target
+target.blockers.className=blocker
+target.blockers.color=s
+target.blockers.goal=6
+target.blockers.min=10
+target.blockers.max=10
+target.blockers.percent=0
+target.blockers.levelWeights=50 50
+target.blockers.sprite=Blocker
+target.blockers.type=flyto
+target.blockers.rotateOnFlyTo=false
+target.blockers.flyToUI=CollectorMaster2
+target.blockers.dropColumnFilter=.........
+
+
+
+
+# ----- Special Rules ----------------------
+
+
+rack_intro=type 1 duration 1.00 delay .1        
+
+
+rack_outro=type 2 duration 1.00 delay 0.25        
+
+
+
+
+bg_color=255 255 255 255        
+
+
+music=CheerUpCharlieMusic_2  GoldenTicketMusic NotCandyManMusic_2 NotCandyManMusic_1  CandyManMusic CandymanMusic_2 musicIsSequential=false            
+
+
+music_delay=0                                                                                           ##                                                                                                        
+two_by_two_splitter=true        
+square_match=true                
+
+
+
+
+bonus=6 deleter                
+bonus=11 deleter        
+bonus=15 deleter        
+bonus=19 deleter        
+
+
+
+
+
+
+
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove          
+inLevelPowerup=powerup_rowclear #Arrow                
+inLevelPowerup=powerup_basket #Gobstopper        
+inLevelPowerup=powerup_super_plump # Butterfly        
+
+
+
+
+
+
+# ----- Secondary Cascade Commands ---------
+
+
+explosiveness=4

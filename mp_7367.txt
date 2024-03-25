@@ -1,0 +1,254 @@
+﻿# ----- Level mp_7367 ---------------------------
+# Designer: Hasni Aamir
+# Properties: Collect 2 Mirrors, Complete 2 firebolts, Collect 12 beans, Spell used Colovaria and Refill
+# Difficulty Target: Medium
+
+
+win=mirror 2
+win=mining
+win=firebolt 2
+        
+
+
+lose=moves 18           
+
+
+
+
+# - Star/Points Targets —----------
+star=1000                
+star=5000                
+star=115000        
+
+
+# - Gameboard Items --
+
+
+new=rbgyvw          
+
+
+
+
+color.r=Red         
+color.b=Blue           
+color.g=Green            
+color.y=Yellow            
+color.v=Violet
+color.w=White   
+
+
+weights=16 16 16 16 16 20                
+
+
+
+
+# —----------- The Gameboard—------------        
+
+
+row=RRR.RRRRR        
+row=RRRRRRRRR        
+row=..RRRRRRR        
+row=RRRRRRRRR        
+row=..RRRRR..        
+row=RRRRRRRRR        
+row=RRRRRRR..
+row=RRRRRRRRR
+row=RRRRR.RRR
+
+
+
+
+power=.........
+power=.........
+power=.........
+power=......v..
+power=.........
+power=.........
+power=.........
+power=.........
+power=..v......
+
+
+
+
+mirror.1.coord=5,6
+mirror.1.color=b                
+mirror.1.count=20
+
+
+mirror.2.coord=2,1 
+mirror.2.color=r
+mirror.2.count=20
+
+
+
+
+mining=......322
+mining=.........
+mining=.........
+mining=......322
+mining=.........
+mining=223......
+mining=.........
+mining=.........
+mining=223......
+
+
+
+
+mining_intro=false
+
+
+
+
+mining_color=......322
+mining_color=.........
+mining_color=.......33
+mining_color=.........
+mining_color=.........
+mining_color=331......
+mining_color=.........
+mining_color=.........
+mining_color=33.......
+
+
+
+
+
+
+
+
+firebolt=.........
+firebolt=.........
+firebolt=.........
+firebolt=>3>......
+firebolt=.........
+firebolt=......3<3
+firebolt=.........
+firebolt=.........
+firebolt=.........
+
+
+
+
+boost=.........
+boost=...1.....
+boost=.........
+boost=...1.....
+boost=.........
+boost=.....1...
+boost=....1....
+boost=.........
+boost=.........
+
+
+
+
+# ----- Collectable Items --------------------
+
+
+
+
+target.mining.className=mineReward
+target.mining.sprite=MiningHud
+target.mining.type=flyto
+target.mining.flyToUI=CollectorMaster3
+
+
+
+
+
+
+
+
+# ----- Spell Rules ----------------------
+
+
+SpellColovaria.enabled=true
+SpellColovaria.numTargets=20
+
+
+SpellColovaria.inkPots=1........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=.........
+SpellColovaria.inkPots=........1
+
+
+SpellColovaria.inkColor=r........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=.........
+SpellColovaria.inkColor=........b
+
+
+
+
+SpellRefillingCharm.enabled=true
+SpellRefillingCharm.addMoves=3
+
+
+
+
+
+
+# ----- Special Rules ----------------------
+
+
+rack_intro=type 1 duration 1.00 delay .1        
+
+
+rack_outro=type 2 duration 1.00 delay 0.25        
+
+
+
+
+bg_color=255 255 255 255        
+
+
+music=CheerUpCharlieMusic_2  GoldenTicketMusic NotCandyManMusic_2 NotCandyManMusic_1  CandyManMusic CandymanMusic_2 musicIsSequential=false            
+
+
+music_delay=0                                                                                           ##                                                                                                        
+two_by_two_splitter=true        
+square_match=true                
+
+
+
+
+bonus=6 deleter                
+bonus=11 deleter        
+bonus=15 deleter        
+bonus=19 deleter        
+
+
+
+
+
+
+
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove          
+inLevelPowerup=powerup_rowclear #Arrow                
+inLevelPowerup=powerup_basket #Gobstopper        
+inLevelPowerup=powerup_super_plump # Butterfly        
+
+
+
+
+
+
+# ----- Secondary Cascade Commands ---------
+
+
+explosiveness=4

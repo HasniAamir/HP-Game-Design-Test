@@ -1,0 +1,213 @@
+﻿# ----- Level mp_6995 ---------------------------
+# Designer: Hasni Aamir
+# Properties: Open 3 Lock, Spread and Collect 3 Gramophone.
+# Difficulty Target: Medium 
+        
+win=locks 
+win=spread                
+
+
+lose=moves 20           
+
+
+
+
+# - Star/Points Targets —----------
+star=1000                
+star=5000                
+star=115000        
+
+
+
+
+# - Gameboard Items --
+
+
+new=rbgyv           
+
+
+
+
+color.r=Red        
+color.b=Blue           
+color.g=Green            
+color.y=Yellow            
+color.v=Violet
+
+
+weights=16 16 16 16 16        
+
+
+
+
+
+
+
+
+
+
+# —----------- The Gameboard—------------        
+
+
+
+
+row=RRRRRRRRR        
+row=RRRRRRRRR        
+row=RRRRRRRRR        
+row=RRRRRRRRR        
+row=.....RRRR        
+row=RRRRRRRRR        
+row=RRRRRRRRR
+row=RRRRRRRRR
+row=RRRRRRRRR
+
+
+
+
+
+
+lock=....2....
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=.........
+lock=1...2....
+lock=.........
+
+
+
+
+
+
+gramophone.row=.........
+gramophone.row=........1
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=.........
+gramophone.row=1...1....
+
+
+gramophone.endingFanfare=ragtime
+
+
+
+
+
+
+
+
+spread=11.......
+spread=11.......
+spread=.........
+spread=.........
+spread=.........
+spread=.........
+spread=.........
+spread=.......11
+spread=.......11
+
+
+
+
+
+
+
+
+boost=...1.....
+boost=.........
+boost=....1....
+boost=.........
+boost=.........
+boost=.........
+boost=.........
+boost=.1.......
+boost=....1....
+
+
+power=.........
+power=....h....
+power=.........
+power=.........
+power=.........
+power=.........
+power=.........
+power=.........
+power=.........
+
+
+
+
+# ----- Collectable Items --------------------
+
+
+## This is where we define the target collection items.
+                                
+#Gramophone Target
+target.gramophone.className=gramophone
+target.gramophone.sprite=GramophoneHud
+target.gramophone.type=flyto
+target.gramophone.goal=15
+target.gramophone.flyToUI=CollectorMaster1
+
+
+
+
+
+
+# ----- Special Rules ----------------------
+
+
+rack_intro=type 1 duration 1.00 delay .1        
+
+
+rack_outro=type 2 duration 1.00 delay 0.25        
+
+
+
+
+bg_color=255 255 255 255        
+
+
+music=CheerUpCharlieMusic_2  GoldenTicketMusic NotCandyManMusic_2 NotCandyManMusic_1  CandyManMusic CandymanMusic_2 musicIsSequential=false            
+
+
+music_delay=0                                                                                           ##                                                                                                        
+two_by_two_splitter=true        
+square_match=true                
+
+
+
+
+bonus=6 deleter                
+bonus=11 deleter        
+bonus=15 deleter        
+bonus=19 deleter        
+
+
+
+
+
+
+
+
+# ----- Power Ups --------------------------
+ 
+inLevelPowerup=powerup_shovel #Boxing Glove          
+inLevelPowerup=powerup_rowclear #Arrow                
+inLevelPowerup=powerup_basket #Gobstopper        
+inLevelPowerup=powerup_super_plump # Butterfly        
+
+
+
+
+
+
+# ----- Secondary Cascade Commands ---------
+
+
+explosiveness=5
